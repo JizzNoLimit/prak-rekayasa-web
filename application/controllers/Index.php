@@ -24,6 +24,7 @@ class Index extends CI_Controller
         $data = array(
             'title' => 'Latihan Codeigniter - Prak. Rekayasa Web'
         );
+        $this->load->helper('url');
         $this->load->view('index', $data);
     }
 }
