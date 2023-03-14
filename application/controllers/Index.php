@@ -25,6 +25,8 @@ class Index extends CI_Controller
             'title' => 'Latihan Codeigniter - Prak. Rekayasa Web'
         );
         $this->load->helper('url');
+        $this->load->view('template/header', $data);
         $this->load->view('index', $data);
+        $this->load->view('template/footer', $data);
     }
 }
