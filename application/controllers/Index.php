@@ -26,7 +26,7 @@ class Index extends CI_Controller
         );
         $this->load->helper('url');
         $this->load->view('template/header', $data);
-        $this->load->view('index', $data);
-        $this->load->view('template/footer', $data);
+        $this->load->view('index');
+        $this->load->view('template/footer');
     }
 }
